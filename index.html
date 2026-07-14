@@ -1864,7 +1864,62 @@ window.open(
 
 }
 
+// CONTADOR ANIMADO
 
+const contadores = document.querySelectorAll(".contador");
+
+let iniciouContador = false;
+
+
+function iniciarContadores(){
+
+    if(iniciouContador) return;
+
+    const area = document.querySelector(".numeros");
+
+    if(area.getBoundingClientRect().top < window.innerHeight){
+
+        iniciouContador = true;
+
+
+        contadores.forEach(contador => {
+
+            let valorFinal = Number(contador.dataset.numero);
+
+            let valorAtual = 0;
+
+
+            let tempo = setInterval(()=>{
+
+
+                valorAtual += Math.ceil(valorFinal / 80);
+
+
+                if(valorAtual >= valorFinal){
+
+                    valorAtual = valorFinal;
+
+                    clearInterval(tempo);
+
+                }
+
+
+                contador.innerHTML = valorAtual.toLocaleString("pt-BR") + "+";
+
+
+            },30);
+
+
+        });
+
+    }
+
+}
+
+
+window.addEventListener("scroll", iniciarContadores);
+
+iniciarContadores();
 </script>
 
 
