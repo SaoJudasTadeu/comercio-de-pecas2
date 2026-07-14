@@ -1875,21 +1875,24 @@ function iniciarContadores(){
 
     if(iniciouContador) return;
 
-    const area = document.querySelector(".numeros");
+    const areaNumeros = document.querySelector(".numeros");
 
-    if(area.getBoundingClientRect().top < window.innerHeight){
+
+    if(areaNumeros && areaNumeros.getBoundingClientRect().top < window.innerHeight){
+
 
         iniciouContador = true;
 
 
-        contadores.forEach(contador => {
+        contadores.forEach(contador=>{
+
 
             let valorFinal = Number(contador.dataset.numero);
 
             let valorAtual = 0;
 
 
-            let tempo = setInterval(()=>{
+            let intervalo = setInterval(()=>{
 
 
                 valorAtual += Math.ceil(valorFinal / 80);
@@ -1899,7 +1902,7 @@ function iniciarContadores(){
 
                     valorAtual = valorFinal;
 
-                    clearInterval(tempo);
+                    clearInterval(intervalo);
 
                 }
 
@@ -1911,6 +1914,7 @@ function iniciarContadores(){
 
 
         });
+
 
     }
 
