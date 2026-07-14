@@ -1,0 +1,1873 @@
+<html lang="pt-BR"><head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Comércio de Peças São Judas Tadeu | Peças Usadas para Caminhões</title>
+
+<meta name="description" content="Comércio de Peças São Judas Tadeu - Venda de peças usadas para caminhões e linha pesada em Campinas e região.">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+
+:root{
+--amarelo:#ffc400;
+--preto:#080808;
+--cinza:#f4f4f4;
+--branco:#fff;
+}
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+scroll-behavior:smooth;
+}
+
+
+body{
+color:#222;
+background:#fff;
+}
+
+
+section{
+padding:80px 8%;
+}
+
+
+.titulo{
+text-align:center;
+margin-bottom:45px;
+}
+
+
+.titulo h2{
+font-size:38px;
+text-transform:uppercase;
+}
+
+
+.titulo span{
+color:var(--amarelo);
+}
+
+
+.btn{
+
+display:inline-flex;
+align-items:center;
+gap:10px;
+background:var(--amarelo);
+color:#000;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+transition:.3s;
+
+}
+
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+
+
+/* MENU */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:80px;
+background:#000;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 8%;
+z-index:999;
+
+}
+
+
+.logo{
+
+color:#fff;
+font-size:26px;
+font-weight:bold;
+
+}
+
+
+.logo span{
+
+color:var(--amarelo);
+
+}
+
+
+nav a{
+
+color:#fff;
+text-decoration:none;
+margin-left:25px;
+font-weight:bold;
+
+}
+
+
+nav a:hover{
+
+color:var(--amarelo);
+
+}
+
+
+.menu{
+
+display:none;
+color:#fff;
+font-size:30px;
+cursor:pointer;
+
+}
+
+
+
+/* BANNER */
+
+
+.banner{
+
+height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+text-align:center;
+
+color:#fff;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.75),
+rgba(0,0,0,.75)
+),
+
+url("https://images.unsplash.com/photo-1511919884226-fd3cad34687c");
+
+background-size:cover;
+background-position:center;
+
+}
+
+
+
+.banner h1{
+
+font-size:60px;
+
+}
+
+
+.banner h1 span{
+
+color:var(--amarelo);
+
+}
+
+
+
+.banner p{
+
+font-size:22px;
+max-width:850px;
+line-height:1.7;
+margin:25px auto;
+
+}
+
+
+
+/* EMPRESA */
+
+
+.empresa{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+
+.empresa img{
+
+width:100%;
+height:420px;
+object-fit:cover;
+border-radius:20px;
+
+}
+
+
+
+.empresa-texto h3{
+
+font-size:30px;
+margin-bottom:20px;
+
+}
+
+
+
+.empresa-texto p{
+
+font-size:18px;
+line-height:1.7;
+margin-bottom:15px;
+
+}
+
+
+
+/* CARDS */
+
+
+.cards{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:25px;
+
+}
+
+
+.card{
+
+background:#fff;
+padding:35px 25px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+.card i{
+
+font-size:45px;
+color:var(--amarelo);
+margin-bottom:20px;
+
+}
+
+
+.card h3{
+
+margin-bottom:15px;
+
+}
+
+
+.card p{
+
+line-height:1.6;
+
+}
+
+
+/* ANIMAÇÃO */
+
+
+.fade{
+
+opacity:0;
+transform:translateY(40px);
+transition:1s;
+
+}
+
+
+.fade.show{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+
+/* NUMEROS */
+
+
+.numeros{
+
+background:#000;
+color:#fff;
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+
+text-align:center;
+
+}
+
+
+.numeros i{
+
+font-size:40px;
+color:var(--amarelo);
+
+}
+
+
+.numeros h3{
+
+font-size:45px;
+color:var(--amarelo);
+margin:15px;
+
+}
+/* PRODUTOS */
+
+.produtos{
+
+background:var(--cinza);
+
+}
+
+
+/* MARCAS */
+
+.marcas{
+
+background:var(--cinza);
+
+}
+
+
+.marca{
+
+background:#000;
+color:#fff;
+padding:25px;
+border-radius:15px;
+font-weight:bold;
+text-align:center;
+transition:.3s;
+
+}
+
+
+.marca:hover{
+
+background:var(--amarelo);
+color:#000;
+
+}
+
+
+/* GALERIA */
+
+
+.galeria{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+
+}
+
+
+.galeria img{
+
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:20px;
+
+}
+
+
+/* FAQ */
+
+
+.faq{
+
+max-width:900px;
+margin:auto;
+
+}
+
+
+.faq-item{
+
+margin-bottom:15px;
+
+}
+
+
+.faq-item button{
+
+width:100%;
+padding:20px;
+background:#000;
+color:#fff;
+border:0;
+border-radius:10px;
+font-size:16px;
+font-weight:bold;
+display:flex;
+justify-content:space-between;
+cursor:pointer;
+
+}
+
+
+.faq-item p{
+
+background:#f2f2f2;
+padding:20px;
+display:none;
+line-height:1.6;
+
+}
+
+
+/* CHAMADA */
+
+
+.chamada{
+
+background:#000;
+color:#fff;
+text-align:center;
+
+}
+
+
+.chamada h2{
+
+font-size:40px;
+margin-bottom:20px;
+
+}
+
+
+.chamada p{
+
+font-size:20px;
+margin-bottom:30px;
+
+}
+
+
+/* CONTATO */
+
+
+.contato{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+
+.contato form{
+
+display:flex;
+flex-direction:column;
+gap:15px;
+
+}
+
+
+.contato input,
+.contato textarea{
+
+width:100%;
+padding:18px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+
+}
+
+
+.contato textarea{
+
+height:150px;
+resize:none;
+
+}
+
+
+.info{
+
+font-size:18px;
+line-height:2;
+
+}
+
+
+.info h3{
+
+font-size:28px;
+margin-bottom:20px;
+
+}
+
+
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+right:25px;
+bottom:25px;
+
+width:65px;
+height:65px;
+
+border-radius:50%;
+
+background:#25d366;
+color:#fff;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:35px;
+
+text-decoration:none;
+
+z-index:1000;
+
+}
+
+
+/* FOOTER */
+
+
+footer{
+
+background:#000;
+color:#fff;
+
+padding:60px 8%;
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+
+gap:40px;
+
+}
+
+
+footer h2{
+
+font-size:30px;
+margin-bottom:15px;
+
+}
+
+
+footer span{
+
+color:var(--amarelo);
+
+}
+
+
+footer h3{
+
+color:var(--amarelo);
+margin-bottom:15px;
+
+}
+
+
+footer p{
+
+line-height:1.8;
+
+}
+
+
+.copyright{
+
+background:#050505;
+color:#aaa;
+
+text-align:center;
+
+padding:20px;
+
+font-size:14px;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:900px){
+
+
+nav{
+
+display:none;
+position:absolute;
+top:80px;
+left:0;
+width:100%;
+background:#000;
+padding:20px;
+
+}
+
+
+nav a{
+
+display:block;
+margin:20px;
+
+}
+
+
+.menu{
+
+display:block;
+
+}
+
+
+.empresa{
+
+grid-template-columns:1fr;
+
+}
+
+
+.banner h1{
+
+font-size:38px;
+
+}
+
+
+.banner p{
+
+font-size:17px;
+
+}
+
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.numeros{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.galeria{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.contato{
+
+grid-template-columns:1fr;
+
+}
+
+
+footer{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+
+@media(max-width:500px){
+
+
+.cards,
+.numeros,
+.galeria{
+
+grid-template-columns:1fr;
+
+}
+
+
+.banner h1{
+
+font-size:32px;
+
+}
+
+
+.titulo h2{
+
+font-size:28px;
+
+}
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+
+<div class="logo">
+
+São Judas <span>Tadeu</span>
+
+</div>
+
+
+<div class="menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+
+<nav>
+
+<a href="#inicio">Início</a>
+<a href="#empresa">Empresa</a>
+<a href="#pecas">Peças Usadas</a>
+<a href="#marcas">Marcas</a>
+<a href="#contato">Contato</a>
+
+</nav>
+
+
+</header>
+
+
+<section class="banner" id="inicio">
+
+
+<div>
+
+
+<h1>
+
+Peças Usadas para <span>Caminhões</span>
+
+</h1>
+
+
+<p>
+
+Venda de peças usadas para linha pesada.
+Cabines, motores, câmbios, diferenciais e componentes revisados.
+
+Atendimento em Campinas e região.
+
+</p>
+
+
+<a class="btn" target="_blank" href="https://wa.me/5519998544895">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Falar no WhatsApp
+
+</a>
+
+
+</div>
+
+
+</section>
+
+
+<section class="fade show" id="empresa">
+
+
+<div class="titulo">
+
+<h2>
+
+Sobre a <span>Empresa</span>
+
+</h2>
+
+</div>
+
+
+<div class="empresa">
+
+
+<div>
+
+<img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3" alt="Peças usadas de caminhão">
+
+</div>
+
+
+<div class="empresa-texto">
+
+
+<h3>
+
+Comércio de Peças São Judas Tadeu
+
+</h3>
+
+
+<p>
+
+Somos especializados na venda de peças usadas para caminhões e veículos de linha pesada.
+
+</p>
+
+
+<p>
+
+Trabalhamos com cabines, motores, câmbios e componentes usados com avaliação e procedência.
+
+</p>
+
+
+<p>
+
+Atendimento para caminhoneiros, oficinas e transportadoras em Campinas e região.
+
+</p>
+
+
+<a class="btn" target="_blank" href="https://wa.me/5519998544895">
+
+Solicitar orçamento
+
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</section><section class="fade show">
+
+<div class="titulo">
+
+<h2>
+
+Por que escolher a <span>São Judas Tadeu?</span>
+
+</h2>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card">
+
+<i class="fa-solid fa-truck"></i>
+
+<h3>
+
+Linha Pesada
+
+</h3>
+
+<p>
+
+Peças usadas para caminhões nacionais e importados de diversas marcas.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-gears"></i>
+
+<h3>
+
+Grande Estoque
+
+</h3>
+
+<p>
+
+Cabines usadas, motores, câmbios, diferenciais, eixos e componentes.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-check"></i>
+
+<h3>
+
+Procedência
+
+</h3>
+
+<p>
+
+Peças avaliadas antes da venda para oferecer mais segurança ao cliente.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>
+
+Atendimento
+
+</h3>
+
+<p>
+
+Nossa equipe ajuda a encontrar a peça correta para seu caminhão.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="numeros fade show">
+
+
+<div>
+
+<i class="fa-solid fa-calendar"></i>
+
+<h3 class="contador" data-numero="20">
+
+20+
+
+</h3>
+
+<p>
+
+Anos de experiência
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-users"></i>
+
+<h3 class="contador" data-numero="5000">
+
+Mais de 2.000
+
+</h3>
+
+<p>
+
+Clientes atendidos
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-box"></i>
+
+<h3 class="contador" data-numero="10000">
+
+Mais de 5.000
+
+</h3>
+
+<p>
+
+Peças usadas disponíveis
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3 class="contador" data-numero="50">
+
++50
+
+</h3>
+
+<p>
+
+Modelos atendidos
+
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="fade produtos show" id="pecas">
+
+
+<div class="titulo">
+
+<h2>
+
+Nossas <span>Peças Usadas</span>
+
+</h2>
+
+
+<p>
+
+Peças usadas para caminhões e linha pesada.
+
+</p>
+
+</div>
+
+
+
+<div class="cards">
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-truck-front"></i>
+
+<h3>
+
+Cabines Usadas
+
+</h3>
+
+<p>
+
+Cabines completas, portas, bancos, painéis e acabamentos.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-gears"></i>
+
+<h3>
+
+Motores Usados
+
+</h3>
+
+<p>
+
+Motores completos e componentes revisados para caminhões.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-gears"></i>
+
+<h3>
+
+Câmbios Usados
+
+</h3>
+
+<p>
+
+Caixas de transmissão e componentes para linha pesada.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-truck"></i>
+
+<h3>
+
+Diferenciais e Eixos
+
+</h3>
+
+<p>
+
+Conjuntos usados para reposição em caminhões.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-road"></i>
+
+<h3>
+
+Suspensão
+
+</h3>
+
+<p>
+
+Molas, suportes, componentes estruturais e peças usadas.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+<h3>
+
+Peças de Cabine
+
+</h3>
+
+<p>
+
+Faróis, lanternas, acabamentos e componentes elétricos.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+<h3>
+
+Componentes Mecânicos
+
+</h3>
+
+<p>
+
+Peças mecânicas usadas para manutenção e reparação.
+
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<i class="fa-solid fa-truck-ramp-box"></i>
+
+<h3>
+
+Caminhões Antigos
+
+</h3>
+
+<p>
+
+Peças difíceis de encontrar para modelos antigos e fora de linha.
+
+</p>
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="fade marcas show" id="marcas">
+
+
+<div class="titulo">
+
+<h2>
+
+Marcas <span>Atendidas</span>
+
+</h2>
+
+</div>
+
+
+
+<div class="cards">
+
+
+<div class="marca">
+
+Mercedes-Benz
+
+</div>
+
+
+<div class="marca">
+
+Scania
+
+</div>
+
+
+<div class="marca">
+
+Volvo
+
+</div>
+
+
+<div class="marca">
+
+Volkswagen Caminhões
+
+</div>
+
+
+<div class="marca">
+
+Iveco
+
+</div>
+
+
+<div class="marca">
+
+Ford Caminhões
+
+</div>
+
+
+<div class="marca">
+
+Agrale
+
+</div>
+
+
+<div class="marca">
+
+Chevrolet Caminhões
+
+</div>
+
+
+</div>
+
+
+</section><section class="fade show">
+
+<div class="titulo">
+
+<h2>
+
+Nossa <span>Galeria</span>
+
+</h2>
+
+</div>
+
+
+<div class="galeria">
+
+
+<img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3" alt="Peças usadas caminhão">
+
+
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c" alt="Caminhão">
+
+
+<img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc" alt="Manutenção caminhão">
+
+
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70" alt="Linha pesada">
+
+
+</div>
+
+</section>
+
+
+
+
+<section class="fade show">
+
+
+<div class="titulo">
+
+<h2>
+
+Perguntas <span>Frequentes</span>
+
+</h2>
+
+</div>
+
+
+
+<div class="faq">
+
+
+<div class="faq-item">
+
+<button>
+
+Vocês trabalham com peças usadas?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<p>
+
+Sim. Trabalhamos com peças usadas para caminhões, avaliadas e selecionadas para venda.
+
+</p>
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+<button>
+
+Vocês compram caminhões para desmontagem?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<p style="display: block;">
+
+Sim. Avaliamos caminhões e veículos de linha pesada para desmontagem e reaproveitamento de peças.
+
+</p>
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+<button>
+
+Como consultar uma peça?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<p>
+
+Envie pelo WhatsApp o modelo do caminhão, ano, peça desejada e fotos se possível.
+
+</p>
+
+</div>
+
+
+
+
+<div class="faq-item">
+
+<button>
+
+Quais marcas atendem?
+
+<i class="fa-solid fa-plus"></i>
+
+</button>
+
+<p>
+
+Atendemos Mercedes-Benz, Scania, Volvo, Volkswagen, Iveco, Ford e outras marcas.
+
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="chamada fade show">
+
+
+<h2>
+
+Precisa de uma peça usada?
+
+</h2>
+
+
+<p>
+
+Fale com nossa equipe e encontre a peça ideal para seu caminhão.
+
+</p>
+
+
+<a class="btn" target="_blank" href="https://wa.me/5519998544895">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Solicitar orçamento
+
+</a>
+
+
+</section>
+
+
+
+
+
+<section class="fade show" id="contato">
+
+
+<div class="titulo">
+
+<h2>
+
+Entre em <span>Contato</span>
+
+</h2>
+
+</div>
+
+
+
+<div class="contato">
+
+
+<form onsubmit="enviarWhats(event)">
+
+
+<input id="nome" type="text" placeholder="Seu nome" required="">
+
+
+<input id="telefone" type="tel" placeholder="Seu telefone" required="">
+
+
+<input id="peca" type="text" placeholder="Qual peça usada procura?" required="">
+
+
+<input id="modelo" type="text" placeholder="Modelo do caminhão" required="">
+
+
+<input id="ano" type="text" placeholder="Ano do caminhão">
+
+
+<textarea id="mensagem" placeholder="Informações adicionais da peça ou caminhão"></textarea>
+
+
+<button class="btn" type="submit">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Enviar pelo WhatsApp
+
+</button>
+
+
+</form>
+
+
+
+
+
+<div class="info">
+
+
+<h3>
+
+Comércio de Peças São Judas Tadeu
+
+</h3>
+
+
+<p>
+📍 Campinas e região
+</p>
+
+
+<p>
+📞 WhatsApp: (19) 99854-4895
+</p>
+
+
+<p>
+🚛 Peças usadas para caminhões e linha pesada
+</p>
+
+
+<p>
+⏰ Segunda a Sexta - 08:00 às 17:00
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<a class="whatsapp" target="_blank" href="https://wa.me/5519998544895">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+
+
+
+
+<footer>
+
+
+<div>
+
+<h2>
+
+São Judas <span>Tadeu</span>
+
+</h2>
+
+
+<p>
+
+Peças usadas para caminhões e linha pesada.
+
+</p>
+
+
+<p>
+
+Atendimento em Campinas e região.
+
+</p>
+
+</div>
+
+
+
+<div>
+
+<h3>
+
+Contato
+
+</h3>
+
+
+<p>
+
+WhatsApp: (19) 99854-4895
+
+</p>
+
+
+<p>
+
+Solicite seu orçamento.
+
+</p>
+
+
+</div>
+
+
+
+<div>
+
+<h3>
+
+Atendimento
+
+</h3>
+
+
+<p>
+
+Segunda a Sexta
+
+</p>
+
+
+<p>
+
+08:00 às 17:00
+
+</p>
+
+
+</div>
+
+
+</footer>
+
+
+
+<div class="copyright">
+
+© 2026 Comércio de Peças São Judas Tadeu - Todos os direitos reservados.
+
+</div>
+
+
+
+
+
+<script>
+
+
+const menu=document.querySelector(".menu");
+
+const nav=document.querySelector("nav");
+
+
+menu.onclick=()=>{
+
+nav.style.display =
+nav.style.display==="block"
+? "none"
+: "block";
+
+};
+
+
+
+document.querySelectorAll(".faq-item button").forEach(botao=>{
+
+
+botao.onclick=()=>{
+
+let resposta=botao.nextElementSibling;
+
+
+resposta.style.display =
+resposta.style.display==="block"
+? "none"
+: "block";
+
+
+};
+
+
+});
+
+
+
+
+const elementos=document.querySelectorAll(".fade");
+
+
+function animar(){
+
+
+elementos.forEach(el=>{
+
+
+let posicao=el.getBoundingClientRect().top;
+
+
+if(posicao < window.innerHeight-100){
+
+el.classList.add("show");
+
+}
+
+
+});
+
+
+}
+
+
+window.addEventListener("scroll",animar);
+
+animar();
+
+
+
+
+
+function enviarWhats(event){
+
+event.preventDefault();
+
+
+let nome=document.getElementById("nome").value;
+
+let telefone=document.getElementById("telefone").value;
+
+let peca=document.getElementById("peca").value;
+
+let modelo=document.getElementById("modelo").value;
+
+let ano=document.getElementById("ano").value;
+
+let mensagem=document.getElementById("mensagem").value;
+
+
+
+let texto=`Olá! Encontrei o site da Comércio de Peças São Judas Tadeu.
+
+Nome: ${nome}
+
+Telefone: ${telefone}
+
+Peça usada: ${peca}
+
+Modelo do caminhão: ${modelo}
+
+Ano: ${ano}
+
+Informações:
+
+${mensagem}`;
+
+
+
+window.open(
+
+"https://wa.me/5519998544895?text="+encodeURIComponent(texto),
+
+"_blank"
+
+);
+
+
+}
+
+
+</script>
+
+
+
+
+</body></html>
